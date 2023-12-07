@@ -11,6 +11,8 @@
 		4B2F88412B217B810018628B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2F88402B217B810018628B /* ContentView.swift */; };
 		4B2F88432B217B830018628B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B2F88422B217B830018628B /* Assets.xcassets */; };
 		4B2F88472B217B830018628B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B2F88462B217B830018628B /* Preview Assets.xcassets */; };
+		4B2F884E2B217C130018628B /* MediaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2F884D2B217C130018628B /* MediaHelper.swift */; };
+		4B2F88502B2180A80018628B /* MediaPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2F884F2B2180A80018628B /* MediaPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,9 @@
 		4B2F88422B217B830018628B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B2F88442B217B830018628B /* SaveVideoProblem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SaveVideoProblem.entitlements; sourceTree = "<group>"; };
 		4B2F88462B217B830018628B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B2F884D2B217C130018628B /* MediaHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaHelper.swift; sourceTree = "<group>"; };
+		4B2F884F2B2180A80018628B /* MediaPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPicker.swift; sourceTree = "<group>"; };
+		4B2F88512B2183650018628B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +57,11 @@
 		4B2F883D2B217B810018628B /* SaveVideoProblem */ = {
 			isa = PBXGroup;
 			children = (
+				4B2F88512B2183650018628B /* Info.plist */,
 				4B2F883E2B217B810018628B /* SaveVideoProblemApp.swift */,
 				4B2F88402B217B810018628B /* ContentView.swift */,
+				4B2F884F2B2180A80018628B /* MediaPicker.swift */,
+				4B2F884D2B217C130018628B /* MediaHelper.swift */,
 				4B2F88422B217B830018628B /* Assets.xcassets */,
 				4B2F88442B217B830018628B /* SaveVideoProblem.entitlements */,
 				4B2F88452B217B830018628B /* Preview Content */,
@@ -139,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B2F884E2B217C130018628B /* MediaHelper.swift in Sources */,
 				4B2F88412B217B810018628B /* ContentView.swift in Sources */,
+				4B2F88502B2180A80018628B /* MediaPicker.swift in Sources */,
 				4B2F883F2B217B810018628B /* SaveVideoProblemApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +284,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaveVideoProblem/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Aceppt to use photos albums";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -312,6 +324,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaveVideoProblem/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Aceppt to use photos albums";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
